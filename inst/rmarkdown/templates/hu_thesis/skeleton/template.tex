@@ -1,4 +1,4 @@
-% This is the HU Berlin LaTeX template, optimized for R Markdown.
+% This is a UDE template, optimized for R Markdown.
 
 % -------------------------------
 % --- PREAMBLE ---
@@ -39,9 +39,9 @@
 \oddsidemargin3cm
 \evensidemargin3cm
 \setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}   
+\setcounter{tocdepth}{3}
 $if(space_between_paragraphs)$
-  \usepackage[parfill]{parskip} 
+  \usepackage[parfill]{parskip}
 $endif$
 
 % define line spacing = 1.5
@@ -116,19 +116,22 @@ $endfor$
   $chair$ \\
   $if(chair2)$ $chair2$ \\ $endif$ \vspace{1cm}
 
-  \includegraphics[width=0.35\textwidth]{HU_Logo_small.png}
-  
+  \includegraphics[width=0.35\textwidth]{nrwschool.jpg}
+  \includegraphics[width=0.35\textwidth]{logo_ifp.jpg}
+  \includegraphics[width=0.35\textwidth]{fakultaet_logo.png}
+  \includegraphics[width=0.35\textwidth]{ude_logo.png}
+
   by \\\vspace{0.5cm}
   \textbf{$author$} \\
   ($matriculation_number$) \\
-  
+
   \medskip
   \medskip
   in partial fulfillment of the requirements \\
   for the degree of \\
   \textbf{$program$} \\\vspace{0.5cm}
   $date$
-  
+
 \end{center}
 
 % ------------------------------------
@@ -185,7 +188,7 @@ $endif$
 % --- main body of the thesis ---
 % -------------------------------
 \newpage
-\pagestyle{plain}       
+\pagestyle{plain}
 \setcounter{page}{1}    % start page numbering anew
 \pagenumbering{arabic}  % page numbers in arabic style
 
@@ -203,13 +206,12 @@ $body$
 \hypertarget{declaration-of-authorship}{%
 \section*{Declaration of Authorship}\label{declaration-of-authorship}}
 
-I hereby confirm that I have authored this \thesistype{} independently and
-without use of others than the indicated sources. All passages which are
-literally or in general matter taken out of publications or other sources are
-marked as such.
+Ich versichere durch meine eigenhändige Unterschrift an Eides Statt, dass ich diese Masterarbeit mit dem Titel $title$ selbstständig und ohne fremde Hilfe angefertigt habe und alle Stellen, die ich wörtlich oder   dem   Sinne   nach   aus   veröffentlichten   und nicht   veröffentlichten   Quellen entnommen habe, als solche kenntlich gemacht habe und mich auch keiner anderen als der angegebenen Literatur oder sonstiger Hilfsmittel bedient habe.
+Weiterhin   erkläre   ich,   dass   die   Arbeit   in   gleicher   oder   ähnlicher   Form   oder auszugsweise   im   Rahmen   einer anderen   Prüfung   noch   nicht   zur   Bewertung vorgelegt worden ist.
+Ich   versichere   an   Eides   Statt,   dass   ich   die   vorgenannten  Angaben   nach   bestem Wissen   und   Gewissen   gemacht habe   und   dass   die   Angaben   der   Wahrheit entsprechen und ich nichts verschwiegen habe. Die   Strafbarkeit   einer   falschen   eidesstattlichen   Versicherung   ist   mir   bekannt, namentlich die Strafandrohung gemäß § 156 StGB bis zu drei Jahren Freiheitsstrafe oder Geldstrafe bei vorsätzlicher Begehung der Tat bzw. gemäß § 161 Abs.1 StGB bis zu einem Jahr Freiheitsstrafe oder Geldstrafe bei fahrlässiger Begehung.
 \vspace{1cm}
 
-Berlin, \thesisdate{}
+Köln, den \thesisdate{}
 \vspace{3cm}
 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
